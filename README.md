@@ -8,8 +8,8 @@ Site, HTML ve CSS kullanılarak hazırlanmıştır ve GitHub Pages üzerinden ya
 ## Özellikler
 - Mobil uyumlu tasarım (responsive design)
 - Basit ve temiz arayüz
-- Yazdırma için özel `@media print` ayarları
-- İndirilebilir CV butonu
+- Yazdırma için özel `@media print` ayarları (eklenecek)
+- İndirilebilir CV butonu (eklenecek)
 
 ## Kullanım
 Bu proje yalnızca kişisel CV sunumu amacıyla hazırlanmıştır.  
