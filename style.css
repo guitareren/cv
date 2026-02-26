@@ -163,7 +163,7 @@
         }
 
         .logoZetas {
-            width: 72px;
+            width: 50px;
             /* header ikonları için küçük boyut */
             height: 32px;
             object-fit: contain;
@@ -172,7 +172,7 @@
         }
 
         .logoern {
-            width: 70px;
+            width: 50px;
             /* header ikonları için küçük boyut */
             height: 32px;
             object-fit: contain;
@@ -181,7 +181,7 @@
         }
 
         .logoZmakina {
-            width: 72px;
+            width: 60px;
             /* header ikonları için küçük boyut */
             height: 32px;
             object-fit: contain;
