@@ -1,0 +1,272 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #e0e0e0, #cfd8dc);
+            border-bottom: 3px solid #919496;
+            box-shadow: 0 2px 6px rgba(189, 187, 187, 0.1);
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px 30px;
+            transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.5s ease;
+            border-radius: 8px;
+        }
+
+        .header-container:hover {
+            background-color: #f9f9f9;
+            /* subtle highlight */
+            transform: scale(1.02);
+            /* slight zoom */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            /* stronger shadow on hover */
+        }
+
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #000000;
+        }
+
+        .header p {
+            margin: 8px 0;
+            font-size: 1.1em;
+            color: #000000;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            /* ikonlar arası boşluk */
+            margin-top: 10px;
+            flex-wrap: wrap;
+            /* ekran küçülünce alt alta geçer */
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0077b5;
+            /* hover efekti  */
+        }
+
+        .logoSocial {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            margin-right: 8px;
+        }
+
+        .left-column {
+            width: 30%;
+            background: #f9f9f9;
+            padding: 15px;
+            border-right: 2px solid #ddd;
+        }
+
+        .right-column {
+            width: 70%;
+            padding: 15px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+            background-color: #fff;
+            /* clean card look */
+        }
+
+        .section:hover {
+            background-color: #f9f9f9;
+            /* subtle highlight */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            /* depth effect */
+            transform: translateY(-3px);
+            /* slight lift instead of zoom */
+        }
+
+        .section h2 {
+            border-bottom: 1px solid #160707;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 24px;
+            /* header ikonları için küçük boyut */
+            height: 24px;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .logoBilgi {
+            width: 32px;
+            /* header ikonları için küçük boyut */
+            height: 32px;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .logoZetas {
+            width: 72px;
+            /* header ikonları için küçük boyut */
+            height: 32px;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .logoern {
+            width: 70px;
+            /* header ikonları için küçük boyut */
+            height: 32px;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .logoZmakina {
+            width: 72px;
+            /* header ikonları için küçük boyut */
+            height: 32px;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        /* Deneyim bölümü için flexbox */
+        .experience {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background-color 0.6s ease, transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        .item:hover {
+            background-color: #f0f8ff;
+            /* light highlight */
+            transform: scale(1.02);
+            /* subtle zoom */
+        }
+
+
+        /* Show tasks when hovering over the item */
+        .item:hover+.tasks {
+            display: block;
+            background-color: #fafafa;
+            border-left: 3px solid #909192;
+            padding-left: 10px;
+            border-radius: 4px;
+        }
+
+        .tasks {
+            margin-left: 52px;
+            /* logo + boşluk kadar içeri kaydırır */
+            margin-top: 5px;
+            /* üstten biraz boşluk bırakır */
+            transition: all 0.5s ease;
+        }
+
+        .org-link {
+            text-decoration: none;
+            color: inherit;
+            /* yazı rengini korur */
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .org-link:hover {
+            color: #0077b5;
+            /* hover sırasında renk değişimi */
+        }
+
+
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+
+        .tasks ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .profile-photo {
+            width: 120px;
+            /* fotoğraf boyutu */
+            height: 120px;
+            border-radius: 50%;
+            /* yuvarlak görünüm */
+            object-fit: cover;
+            /* fotoğrafı kırpmadan ortalar */
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                /* yan yana yerine alt alta */
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+                /* her sütun tam genişlik */
+            }
+        }
