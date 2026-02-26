@@ -270,27 +270,36 @@
             margin-bottom: 10px;
         }
 
-@media print {
-  body {
-    zoom: 1; /* Normal boyut */
-    background: #ffffff !important; /* Beyaz arka plan */
-    color: #000000 !important; /* Siyah yazı */
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
+        @media print {
+            body {
+                zoom: 1;
+                /* Normal boyut */
+                background: #ffffff !important;
+                /* Beyaz arka plan */
+                color: #000000 !important;
+                /* Siyah yazı */
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
 
-  * {
-    background: #ffffff !important; /* Tüm öğelerin arka planı beyaz */
-    color: #000000 !important; /* Tüm yazılar siyah */
-    box-shadow: none !important; /* Gölge efektlerini kaldır */
-  }
+            * {
+                background: #ffffff !important;
+                /* Tüm öğelerin arka planı beyaz */
+                color: #000000 !important;
+                /* Tüm yazılar siyah */
+                box-shadow: none !important;
+                /* Gölge efektlerini kaldır */
+            }
 
-  footer {
-    display: none; /* Footer'ı gizle */
-  }
+            footer {
+                display: none;
+                /* Footer'ı gizle */
+            }
 
-  @page {
-    size: A4; /* Çıktıyı A4 boyutuna ayarla */
-    margin: 10mm; /* Kenar boşlukları */
-  }
-}
+            @page {
+                size: A4;
+                /* Çıktıyı A4 boyutuna ayarla */
+                margin: 10mm;
+                /* Kenar boşlukları */
+            }
+        }
