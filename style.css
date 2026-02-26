@@ -78,6 +78,18 @@
             /* hover efekti  */
         }
 
+        a[href^="mailto:"] {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s ease;
+        }
+
+        a[href^="mailto:"]:hover {
+            color: #0077b5;
+            /* hover sırasında renk değişimi */
+        }
+
+
         .logoSocial {
             width: 24px;
             height: 24px;
