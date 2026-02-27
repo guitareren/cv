@@ -7,9 +7,10 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #e0e0e0, #cfd8dc);
-            border-bottom: 3px solid #919496;
-            box-shadow: 0 2px 6px rgba(189, 187, 187, 0.1);
+            background: linear-gradient(135deg, #f5f7fa, #ffffff);
+            border-bottom: 3px solid #d1d5db;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
         }
 
         .header-container {
@@ -43,15 +44,6 @@
             margin: 8px 0;
             font-size: 1.1em;
             color: #000000;
-        }
-
-        .container {
-            display: flex;
-            width: 90%;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            gap: 20px;
         }
 
         .social-links {
@@ -97,15 +89,60 @@
             margin-right: 8px;
         }
 
+        /* beceriler css */
+        .skills {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .skills h2 {
+            border-bottom: 2px solid #0078d7;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #0078d7;
+        }
+
+        .skill-group {
+            margin-bottom: 15px;
+        }
+
+        .skill-group h3 {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .skill-group ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        .skill-group li {
+            margin: 3px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .skill-group li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0078d7;
+        }
+
+        /*beceriler css son */
+
         .left-column {
-            width: 30%;
+            width: 40%;
             background: #f9f9f9;
             padding: 15px;
             border-right: 2px solid #ddd;
         }
 
         .right-column {
-            width: 70%;
+            width: 60%;
             padding: 15px;
         }
 
@@ -116,6 +153,7 @@
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
             background-color: #fff;
             /* clean card look */
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
         .section:hover {
@@ -203,12 +241,13 @@
             border-radius: 6px;
             transition: background-color 0.6s ease, transform 0.4s ease;
             cursor: pointer;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
         .item:hover {
             background-color: #f0f8ff;
             /* light highlight */
-            transform: scale(1.02);
+            transform: scale(1.03);
             /* subtle zoom */
         }
 
@@ -225,9 +264,10 @@
         .tasks {
             margin-left: 52px;
             /* logo + boşluk kadar içeri kaydırır */
-            margin-top: 5px;
+            margin-top: -10px;
             /* üstten biraz boşluk bırakır */
             transition: all 0.5s ease;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
         .org-link {
@@ -245,7 +285,6 @@
         }
 
 
-
         .footer {
             text-align: center;
             margin-top: 30px;
@@ -253,6 +292,12 @@
             color: #777;
         }
 
+        .job-title {
+            margin-top: -8px;
+            /* Yukarıya biraz yaklaştırır, değeri ihtiyacına göre ayarla */
+            font-style: italic;
+            /* İtalik yapar */
+        }
 
         .tasks ul {
             margin: 0;
@@ -270,15 +315,65 @@
             margin-bottom: 10px;
         }
 
-        @media (max-width: 768px) {
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1000px;
+            /* maksimum genişlik sınırı */
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .about {
+            background:#f9f9f9;
+            padding: 20px;
+            font-family: "Segoe UI", sans-serif;
+            line-height: 1.6;
+        }
+
+        .about h2 {
+            border-bottom: 2px solid #0078d7;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #0078d7;
+        }
+
+        .about-block {
+            margin-bottom: 20px;
+        }
+
+        .about-block h3 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .about-block p {
+            margin: 0;
+            color: #555;
+        }
+
+        .section h2 {
+            margin-bottom: 18px;
+            font-size: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 6px;
+            color: #111;
+        }
+
+
+        /* Küçük ekranlar için */
+        @media (max-width: 950px) {
             .container {
                 flex-direction: column;
-                /* yan yana yerine alt alta */
+                max-width: 95%;
+                /* mobilde daha esnek */
             }
 
             .left-column,
             .right-column {
                 width: 100%;
-                /* her sütun tam genişlik */
             }
         }
